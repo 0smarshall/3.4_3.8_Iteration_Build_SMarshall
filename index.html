@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="https://perfectcirclevintage.com/cdn/shop/files/4628052A-E12E-4AF7-9E41-646E1CD48330.jpg?v=1701823798&width=500" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="./product.html">products</a>
+        <a href="./contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!--home section starts-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>The Home OF VINTAGE CLOTHING </h3>
+        <a href="#" class="btn">get now</a>
+    </div>
+</section>
+
+<!--home section ends-->
+<!-- about section starts -->
+<section class="about" id="about">
+	<h1 class="heading"><span>about</span> us</h1>
+	
+	<!-- Container for image and text content (first instance) -->
+	<div class="about-content-wrapper">
+	  <div class="about-image">
+		<img src="../v3/images/Screenshot 2024-08-12 at 8.17.24 PM.png" alt="About Coffee">
+	  </div>
+	  <div class="about-content about-content-1">
+		<h3>What makes us special?</h3>
+		<p>Here at Disconnected Vintage, we have one of the largest online ranges of vintage streetwear in New Zealand!
+			Shop from over 900 unique vintage Sweatshirts, T-shirts, Jackets, Bottoms, and more! We house unique USA vintage 
+			items, vintage Pro Sports, and vintage University items. We also have an incredible
+			range of vintage streetwear brands such as Nike, Carhartt, Tommy Hilfiger, Ralph 
+			Lauren, Harley Davidson, Adidas, Nautica, Guess, Calvin Klein, and more! Vintage, 
+			straight to your door in no time!		
+			</p>
+		<!-- Additional paragraphs -->
+	  </div>
+	</div>
+	<!-- Container for image and text content (second instance) -->
+	<div class="about-content-wrapper">
+	  <div class="about-content about-content-2">
+		<h3>Our Story</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
+		<!-- Additional paragraphs -->
+	  </div>
+	  <div class="about-image">
+		<img src=".https://www.vintage-folk.com/cdn/shop/collections/IMG_0321_540x.jpg?v=1712649754">
+	  </div>
+	</div>
+  </section>
+  <!-- about section ends -->
+
+<!-- review section ends -->
+
+<!-- contact section srarts -->
+<section class="contact" id="contact">
+	<h1 class="heading">contact <span> us</span></h1>
+ <div class="row">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.6083784177595!2d174.82903877700136!3d-41.16489603289294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38accc90e953a3%3A0x233e7c6fb066360a!2sTawa%20College!5e0!3m2!1sen!2snz!4v1723767128526!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<form action="">
+		<h3>get in touch</h3>
+		<div class="inputBox">
+				<span class="fas fa-user"></span>
+				<input type="text" placeholder="Name">
+		</div>
+		<div class="inputBox">
+				<span class="fas fa-envelope"></span>
+				<input type="email" placeholder="Email">
+		</div>
+		<div class="inputBox">
+				<span class="fas fa-phone"></span>
+				<input type="number" placeholder="Number">
+		</div>
+		<input type="submit" value="contact now" class="btn">
+    </form>
+
+   </div>
+  </div>
+</section>
+<!-- contact section sends -->
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+	<div class="share">
+			<a href="#" class="fab fa-facebook-f"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-pinterest"></a>
+	</div>
+
+	<div class="links">
+			<a href="#">home</a>
+			<a href="#">about</a>
+			<a href="#">menu</a>
+			<a href="#">products</a>
+			<a href="#">review</a>
+			<a href="#">contact</a>
+			<a href="#">blogs</a>
+	</div>
+	<div class="credit">
+		created by 
+		<span class="developer-info"> <a href="" target="">Samuel marshall</a></span> | all rights reserved <br> <br>
+		 
+	</div>
+</section>
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script>
+	let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    cartItem.classList.remove('active');
+}
+
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    navbar.classList.remove('active');
+    cartItem.classList.remove('active');
+}
+
+let cartItem = document.querySelector('.cart-items-container');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    cartItem.classList.toggle('active');
+    navbar.classList.remove('active');
+    searchForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+    searchForm.classList.remove('active');
+    cartItem.classList.remove('active');
+}
+</script>
+
+</body>
+</html>

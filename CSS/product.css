@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'title-font';
+    src: url('../fonts/Chuster\ DEMO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+:root{
+    --main-color:#61c2e5;
+    --bg:rgb(255, 255, 255);
+    --border:.1rem solid rgba(255,255,255,.3);
+	--product-border:.3rem solid #156682 ;
+	--secondary-colour: #f2eee9;
+	--light-text-colour: #4d4d4d;
+	--darker-blue:#156682;
+	--review-border:.2rem solid #156682 ;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background:var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--darker-blue);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#000000;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: white;
+    display: flex;
+	height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+	width: 200px;
+}
+.header .navbar a{
+	margin-left: 100px;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 20px;
+    color:var(--light-text-colour);
+	margin-left: 40px;
+	text-transform: uppercase;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color:var(--light-text-colour);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top:115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:var(--black);
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+/*product start*/
+/*products section*/
+.products .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
+	gap: 1.5rem;
+
+}
+.products .box-container .box{
+	text-align: center;
+	border: var(--product-border);
+	padding: 2rem;
+}
+
+.products .box-container .box .icons a{
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	color: var(--light-text-colour);
+	margin: 0.3rem;
+	border-bottom: var(--product-border);
+}
+
+.products .box-container .box .icons a:hover{
+	background: var(--main-color);
+
+}
+.products .box-container .box .image{
+	padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img{
+	height: 25rem;
+}
+.products .box-container .box .content h3{
+	color:var(--light-text-colour);
+	font-size: 2.5rem;
+}
+.products .box-container .box .content .stars{
+	padding: 1.5rem;
+}
+.products .box-container .box .content .stars{
+ font-size: 1.7rem;
+ color: var(--main-color);
+}
+.products .box-container .box .content .price{
+	color:var(--light-text-colour);
+	font-size: 2.5rem;
+}
